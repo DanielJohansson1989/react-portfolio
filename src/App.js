@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Portfolio from './Portfolio.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+  
+  return(
+    <>   
+      <header>
+        <h1>Daniel Johansson</h1>
+        <nav>
+          <div className="link">Home</div>
+          <div className="link">CV</div>
+          <div className="link">Portfolio</div>
+          <div className="link">Contact</div>
+          <div className="link">Misc.</div>
+        </nav>
       </header>
-    </div>
+
+      <Portfolio/>
+    
+      <footer>
+        <p>&copy; Daniel Johansson 2024</p>
+      </footer>
+    </>
   );
 }
 
-export default App;
+export default App
